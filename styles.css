@@ -2,92 +2,157 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #ffc0cb; /* Fundo rosa */
+    background-color: #f9f9f9;
     color: #333;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
 }
 
-.main-header {
-    background-color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.logo {
+    width: 120px;
 }
 
-.logo img {
-    width: 150px;
-}
-
-.nav-menu ul {
+nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    gap: 20px;
 }
 
-.nav-menu ul li {
-    margin-left: 30px;
-}
-
-.nav-menu ul li a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-.hero-section {
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    text-align: center;
-    background-color: #ffc0cb;
-}
-
-.hero-text h1 {
-    font-size: 3rem;
-    color: #fff;
-}
-
-.hero-text p {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-top: 10px;
-}
-
-.about-section, .contact-section {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.about-section h2, .contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.btn-instagram {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6b81;
+    height: 100vh;
+    background: url('https://imgur.com/AhMmpoE.png') no-repeat center center/cover;
     color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 60px;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0;
+    z-index: 1;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: black;
     text-decoration: none;
-    border-radius: 30px;
+    font-size: 18px;
+    border-radius: 10px;
     margin-top: 20px;
+    z-index: 1;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn-instagram:hover {
-    background-color: #333;
+.cta-btn:hover {
+    background-color: white;
+    color: #ffcc00;
+    transform: scale(1.1);
 }
 
-.main-footer {
+.about-section {
+    padding: 50px;
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.about-image {
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.social-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.social-icon {
+    width: 60px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: rotate(360deg);
+}
+
+footer {
+    background-color: #222;
     color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
