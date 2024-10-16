@@ -3,56 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituto Arsol</title>
+    <title>Instituto Arsol - Ballet Infantil</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="logo-container">
-            <img src="https://imgur.com/694arEN.png" alt="Logo Arsol" class="logo">
+            <img src="https://imgur.com/694arEN.png" alt="Logo Instituto Arsol" class="logo">
         </div>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#classes">Aulas</a></li>
                 <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#social">Redes Sociais</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="overlay"></div>
-        <h1>Bem-vindo ao Instituto Arsol</h1>
-        <p>Transformando o futuro através do ballet infantil</p>
-        <a href="#about" class="cta-btn">Saiba Mais</a>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Bem-vindo ao Instituto Arsol</h1>
+            <p>Onde o sonho de dançar ballet infantil se torna realidade.</p>
+            <a href="#about" class="cta-btn">Conheça mais</a>
+        </div>
     </section>
 
     <section id="about" class="about-section">
         <h2>Sobre Nós</h2>
-        <p>Somos uma organização dedicada ao ensino do ballet infantil, proporcionando um ambiente onde crianças podem desenvolver sua expressão artística e habilidades físicas.</p>
-        <img src="https://imgur.com/Tiwu8gS.png" alt="Ballet Infantil" class="about-image">
+        <p>No Instituto Arsol, acreditamos que o ballet infantil é mais do que apenas uma dança. Proporcionamos um espaço seguro e acolhedor para que as crianças desenvolvam sua arte, disciplina e amor pela dança desde cedo.</p>
+        <img src="https://imgur.com/Tiwu8gS.png" alt="Aulas de Ballet Infantil" class="about-image">
+    </section>
+
+    <section id="classes" class="classes-section">
+        <h2>Aulas</h2>
+        <p>Oferecemos diversas modalidades de aulas para diferentes faixas etárias, sempre com foco no desenvolvimento e bem-estar das crianças.</p>
+        <ul class="class-list">
+            <li>Ballet Clássico</li>
+            <li>Ballet Baby</li>
+            <li>Ballet Juvenil</li>
+        </ul>
     </section>
 
     <section id="gallery" class="gallery-section">
         <h2>Galeria</h2>
         <div class="gallery-grid">
-            <img src="https://imgur.com/aQVL2DU.png" alt="Ballet 1">
-            <img src="https://imgur.com/6DDgrWE.png" alt="Ballet 2">
-            <img src="https://imgur.com/Tiwu8gS.png" alt="Ballet 3">
-            <img src="https://imgur.com/QccyH8S.png" alt="Ballet 4">
+            <img src="https://imgur.com/aQVL2DU.png" alt="Ballet Clássico">
+            <img src="https://imgur.com/6DDgrWE.png" alt="Ensaios">
+            <img src="https://imgur.com/QccyH8S.png" alt="Ballet Infantil">
         </div>
     </section>
 
-    <section id="social" class="social-section">
-        <h2>Redes Sociais</h2>
-        <a href="https://www.instagram.com/instituto_arsol?igsh=OWxyNnc2bGFxbTNo" target="_blank">
-            <img src="https://imgur.com/BMD5lvF.png" alt="Instagram Arsol" class="social-icon">
-        </a>
+    <section id="contact" class="contact-section">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações sobre as nossas aulas e projetos.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/instituto_arsol?igsh=OWxyNnc2bGFxbTNo" target="_blank">
+                <img src="https://imgur.com/BMD5lvF.png" alt="Instagram Instituto Arsol" class="social-icon">
+            </a>
+        </div>
     </section>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2024 Instituto Arsol - Todos os direitos reservados.</p>
     </footer>
 </body>
