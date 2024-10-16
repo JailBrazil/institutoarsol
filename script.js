@@ -1,1 +1,1 @@
-// Adicione interações animadas aqui para mais dinamismo
+// Adicione interações animadas para efeitos mais dinâmicos
