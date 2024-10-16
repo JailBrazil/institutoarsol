@@ -4,56 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto Arsol</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo Instituto Arsol">
-            </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="logo-container">
+            <img src="https://imgur.com/694arEN.png" alt="Logo Arsol" class="logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#social">Redes Sociais</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Seção Principal -->
-    <section id="home" class="hero-section">
-        <div class="hero-text">
-            <h1>Bem-vindos ao Instituto Arsol</h1>
-            <p>Formando Estrelas do Ballet</p>
-        </div>
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <h1>Bem-vindo ao Instituto Arsol</h1>
+        <p>Transformando o futuro através do ballet infantil</p>
+        <a href="#about" class="cta-btn">Saiba Mais</a>
     </section>
 
-    <!-- Seção Sobre -->
     <section id="about" class="about-section">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>O Instituto Arsol é uma escola de ballet infantil que oferece aulas com foco no desenvolvimento artístico e pessoal das crianças.</p>
+        <h2>Sobre Nós</h2>
+        <p>Somos uma organização dedicada ao ensino do ballet infantil, proporcionando um ambiente onde crianças podem desenvolver sua expressão artística e habilidades físicas.</p>
+        <img src="https://imgur.com/Tiwu8gS.png" alt="Ballet Infantil" class="about-image">
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Galeria</h2>
+        <div class="gallery-grid">
+            <img src="https://imgur.com/aQVL2DU.png" alt="Ballet 1">
+            <img src="https://imgur.com/6DDgrWE.png" alt="Ballet 2">
+            <img src="https://imgur.com/Tiwu8gS.png" alt="Ballet 3">
+            <img src="https://imgur.com/QccyH8S.png" alt="Ballet 4">
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco pelo Instagram:</p>
-            <a href="https://www.instagram.com/instituto_arsol?igsh=OWxyNnc2bGFxbTNo" class="btn-instagram" target="_blank">Visite nosso Instagram</a>
-        </div>
+    <section id="social" class="social-section">
+        <h2>Redes Sociais</h2>
+        <a href="https://www.instagram.com/instituto_arsol?igsh=OWxyNnc2bGFxbTNo" target="_blank">
+            <img src="https://imgur.com/BMD5lvF.png" alt="Instagram Arsol" class="social-icon">
+        </a>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2024 Instituto Arsol - Todos os direitos reservados.</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 Instituto Arsol - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
